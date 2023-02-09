@@ -5,8 +5,8 @@ const Navbar = () => {
   return (
       <div className="navBar">
         <div className="row container-fluid">
-        <h1 className="appLogo col">Our Recipe App</h1>
-        <ul className="col d-flex">
+        <h1 className="appLogo col"><i>Our Recipe App</i></h1>
+        <ul className="col d-flex my-2 align-center">
           <li className="mx-2">
             <Link className="link" to="/">
               Category

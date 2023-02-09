@@ -47,5 +47,8 @@ ul {
 }
 .userForm{
   display: block;
+}
 
+.align-center{
+  align-items: center;
 }

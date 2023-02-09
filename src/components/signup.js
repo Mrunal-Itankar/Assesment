@@ -5,11 +5,9 @@ import { Person, Mail, Keypad, Key } from "react-ionicons";
 import Img1 from "../Images/signup.png";
 
 const Signup = () => {
-
-
   return (
     <div>
-      <div className="row">
+      <div className="row container-fluid">
         <div className="col-6 my-5">
           <h2>Sign Up</h2>
           <form className="row my-4" name="userSignup">
@@ -25,7 +23,6 @@ const Signup = () => {
                 placeholder="Your Name"
                 name="user_name"
                 id="user_name"
-                // value={user.user_name}
                 // onChange={handleInputs}
               />
             </div>
@@ -42,7 +39,6 @@ const Signup = () => {
                 placeholder="Your Email"
                 name="user_email"
                 id="user_email"
-                // value={user.user_email}
                 // onChange={handleInputs}
               />
             </div>
@@ -58,7 +54,6 @@ const Signup = () => {
                 placeholder="Enter Contact Number"
                 name="user_contact"
                 id="user_contact"
-                // value={user.user_contact}
                 // onChange={handleInputs}
               />
             </div>
@@ -74,7 +69,6 @@ const Signup = () => {
                 placeholder="Enter password"
                 name="user_password"
                 id="user_password"
-                // value={user.user_password}
                 // onChange={handleInputs}
               />
             </div>
