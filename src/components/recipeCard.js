@@ -13,7 +13,7 @@ const RecipeCard = ({ recipe }) => {
             <a
               className="ingredient"
               href={"https://www.themealdb.com/meal/" + idMeal}
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
               Ingredients
             </a>

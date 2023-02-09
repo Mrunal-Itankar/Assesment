@@ -22,7 +22,7 @@ const Homepage = () => {
   };
   useEffect(() => {
     searchRecipes();
-  });
+  },[1000]);
 
   const handleSubmit = (event) => {
     event.preventDefault();

@@ -1,3 +1,4 @@
+import React ,{useState} from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/navbar";
@@ -6,6 +7,8 @@ import Login from "./components/login";
 import Homepage from "./components/homepage";
 
 const App = () => {
+  const [token, setToken] = useState();
+  
   return (
       <Router>
         <div className="App">
@@ -19,7 +22,7 @@ const App = () => {
 
             <Route exact path="/signup" element={<Signup />}></Route>
 
-            <Route exact path="/login" element={<Login />}></Route>
+            <Route exact path="/login" element={<Login setToken={setToken}/>}></Route>
           </Routes>
         </div>
       </Router>

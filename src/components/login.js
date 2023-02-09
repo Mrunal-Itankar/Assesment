@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import { Person, Key } from "react-ionicons";
-import PropTypes from 'prop-types';
 import Img2 from "../Images/login.webp";
 
 
 async function loginUser(credentials) {
-  return fetch('http://localhost:3000/login', {
+  return fetch('http://localhost:3001/loginapi', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -29,9 +28,6 @@ const Login = ({ setToken }) => {
     setToken(token);
   }
 
-
-
-
   return (
     <div>
       <div className="row">
@@ -52,7 +48,7 @@ const Login = ({ setToken }) => {
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1">
-                  <Key />
+                  <Key/>
                 </span>
               </div>
               <input
@@ -78,7 +74,4 @@ const Login = ({ setToken }) => {
   );
 };
 
-Login.propTypes = {
-  setToken: PropTypes.func.isRequired
-}
 export default Login;
